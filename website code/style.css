@@ -1,0 +1,51 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variable definitions*/
+:root{
+    /*colours [l - light, m - medium, d - dark, b - bold]*/
+    --greenL: #e3fde3;
+    --greenM: #3b5f35;
+    --greenD: #294a23;
+
+    --redL: #ffe5e5;
+    --redM: #5f3535;
+    --redD: #4e1f1f;
+    --redB: #892624;
+
+    --blueL: #d4efff;
+    --blueM: #355167;
+    --blueD: #1f3b4e;
+
+    --yellowL: #ffeeda;
+    --yellowB: #bf6600;
+
+    --purpleL: #e7d4ff;
+    --purpleM: #49355f;
+    --purpleD: #361f4e;
+
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #d9d9d9;
+
+    /*text styles*/
+    --font1: "Times New Roman";
+    --font2: "";
+    
+    /*spacings*/
+    --sp1: 5px;
+    --sp2: 10px;
+    --sp3: 20px;
+    --sp4: 45px;
+    --sp5: 75px;
+    --sp6: 175px;
+}
+
+body {
+    background-color: var(--greenL);
+    padding: var(--sp5) var(--sp6);
+}
