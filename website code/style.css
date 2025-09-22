@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*variable definitions*/
@@ -32,6 +31,8 @@
     --grey: #d9d9d9;
 
     /*text styles*/
+    --ff1: "DM Serif Display", perpetua, serif;
+    --ff2: "Roboto Mono", "MS Reference Sans Serif", sans-serif;
     
     /*spacings*/
     --sp1: 5px;
@@ -41,13 +42,28 @@
     --sp5: 75px;
 }
 
+h1, h2 {
+    font-family: var(--ff1);
+}
+
+h1 {
+    font-size: larger;
+}
+
+p { 
+    font-family: var(--ff2);
+}
+
 body {
     background-color: var(--greenL);
-    padding: var(--sp4) var(--sp5);
+    padding: var(--sp3) var(--sp4);
+    justify-content: center;
 }
 
 .container {
     background-color: var(--greenM);
+    
+    margin: auto;
     
     display: flex;
     flex-direction: column;
@@ -57,6 +73,7 @@ body {
     align-items: center;
     
     max-width: 1570px;
+    min-width: 625px;
     
     border-radius: 50px;
     border: 4px solid var(--greenD)
@@ -65,14 +82,15 @@ body {
 .contHeader {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+
+    gap: var(--sp4);
     
     justify-content: center;
     align-items: center;
     
-    padding-top: var(--sp1);
-    padding-bottom: var(--sp1);
+    padding: var(--sp1);
 }
 
 .contBody {
@@ -86,8 +104,14 @@ body {
     justify-content: center;
     align-items: center;
     
+    /*cheat design until can fix slight pixel issue*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
     border-bottom-left-radius: 46px;
     border-bottom-right-radius: 46px;
+
+    border-top: 2px solid var(--grey);
 
     padding: var(--sp1);
 }
