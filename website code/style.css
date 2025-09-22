@@ -47,10 +47,6 @@ h1, h2 {
     font-weight: 100;
 }
 
-h1 {
-    font-size: larger;
-}
-
 p { 
     font-family: var(--ff2);
 }
@@ -86,12 +82,36 @@ body {
     flex-direction: row;
     flex-wrap: wrap-reverse;
 
+    margin: auto;
+    align-self: center;
+    position: relative;
+    
     gap: var(--sp4);
     
     justify-content: center;
-    align-items: center;
+    text-align: center;
     
     padding: var(--sp1);
+}
+
+nav a, h1 {
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    font-family: var(--ff1);
+    font-size: larger;
+    font-weight: 100;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    background-color: var(--greenD);
 }
 
 .contBody {
