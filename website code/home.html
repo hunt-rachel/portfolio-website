@@ -8,29 +8,48 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src="script.js"></script>
+    <!--scripts definitions-->
+    <script src="customComponents.js"></script>
+    
     <div class="container">
+      <!--navigation bar-->
       <nav class="navBar">
-        <div id="highlight"></div>
         <a href="#home" class="active">home</a>
         <a href="#about">about</a>
         <a href="#myWork">my work</a>
         <a href="#contact">contact</a>
-        <h1><i>rachel's portfolio</i></h1>
+        <h1 class="portfolioTag"><i>rachel's portfolio</i></h1>
       </nav>
+
+      <!--container body-->
       <div class="contBody">
         <h2>hi, i'm rachel!</h2>
         <p>game designer · programmer · music composer</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
-        <p>test paragraph</p>
+
+        <div class="gap5"></div>
+        
+        <!--video section-->
+        <div class="videoSlides">
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/swsKszzc6OU"></iframe>
+        </div>
+        
+        <!--work links-->
+        <home-work-link
+          workLink="#myWork";
+          linkText="Shuffle Showdown"
+        ></home-work-link>
+        <home-work-link
+          workLink="#myWork";
+          linkText="software development"
+        ></home-work-link>
+        <home-work-link
+          workLink="#myWork";
+          linkText="music composition"
+        ></home-work-link>
+        <home-work-link
+          workLink="#myWork";
+          linkText="audio implementation"
+        ></home-work-link>
       </div>
     </div>
   </body>
