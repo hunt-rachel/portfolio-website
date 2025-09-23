@@ -51,16 +51,30 @@ p {
     font-family: var(--ff2);
 }
 
+/*body variants*/
 body {
-    background-color: var(--greenL);
     padding: var(--sp3) var(--sp4);
     justify-content: center;
 }
 
+#homeBody {
+    background-color: var(--greenL);
+}
+
+#aboutBody {
+    background-color: var(--redL);
+}
+
+#workBody {
+    background-color: var(--blueL);
+}
+
+#contactBody {
+    background-color: var(--purpleL);
+}
+
 /*general container classes*/
 .container {
-    background-color: var(--greenM);
-    
     margin: auto;
     
     display: flex;
@@ -74,7 +88,27 @@ body {
     min-width: 650px;
     
     border-radius: 50px;
-    border: 4px solid var(--greenD)
+}
+
+/*container variants*/
+#homeContainer {
+    background-color: var(--greenM);
+    border: 4px solid var(--greenD);
+}
+
+#aboutContainer {
+    background-color: var(--redM);
+    border: 4px solid var(--redD);
+}
+
+#workContainer {
+    background-color: var(--blueM);
+    border: 4px solid var(--blueD);
+}
+
+#contactContainer {
+    background-color: var(--purpleM);
+    border: 4px solid var(--purpleD);
 }
 
 .navBar {
@@ -108,8 +142,23 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav a.active {
+/*nav a.active {
+}*/
+
+#homeActive {
     background-color: var(--greenD);
+}
+
+#aboutActive {
+    background-color: var(--redD);
+}
+
+#workActive {
+    background-color: var(--blueD);
+}
+
+#contactActive {
+    background-color: var(--purpleD);
 }
 
 .contBody {
@@ -143,7 +192,6 @@ nav a.active {
 .homeWorkText::before {
     content: "🔗";
     display:inline-block;
-
 }
 
 /*text colourings*/

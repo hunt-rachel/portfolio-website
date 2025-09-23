@@ -7,17 +7,17 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body id="homeBody">
     <!--scripts definitions-->
     <script src="customComponents.js"></script>
     
-    <div class="container">
+    <div class="container" id="homeContainer">
       <!--navigation bar-->
       <nav class="navBar">
-        <a href="#home" class="active">home</a>
-        <a href="#about">about</a>
-        <a href="#myWork">my work</a>
-        <a href="#contact">contact</a>
+        <a href="home.html" class="active" id="homeActive">home</a>
+        <a href="about.html">about</a>
+        <a href="work.html">my work</a>
+        <a href="contact.html">contact</a>
         <h1 class="portfolioTag"><i>rachel's portfolio</i></h1>
       </nav>
 
@@ -30,24 +30,24 @@
         
         <!--video section-->
         <div class="videoSlides">
-          <iframe width="320" height="180" src="https://www.youtube.com/embed/swsKszzc6OU"></iframe>
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/swsKszzc6OU" modestbranding="1"></iframe>
         </div>
         
         <!--work links-->
         <home-work-link
-          workLink="#myWork";
+          workLink="work.html";
           linkText="Shuffle Showdown"
         ></home-work-link>
         <home-work-link
-          workLink="#myWork";
+          workLink="work.html";
           linkText="software development"
         ></home-work-link>
         <home-work-link
-          workLink="#myWork";
+          workLink="work.html";
           linkText="music composition"
         ></home-work-link>
         <home-work-link
-          workLink="#myWork";
+          workLink="work.html";
           linkText="audio implementation"
         ></home-work-link>
       </div>
