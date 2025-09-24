@@ -254,6 +254,11 @@ nav a:hover {
     text-align: justify;
 }
 
+.aboutFooter {
+    display: flex;
+    align-items: center;
+}
+
 /*work classes*/
 
 /*contact classes*/
@@ -278,14 +283,13 @@ nav a:hover {
 .dot {
     height: var(--dotSize);
     width: var(--dotSize);
-    background-color: var(--greenD);
 
     border-radius: 50px;
 }
 
+/*WILL MAKING LINE FLEX ALLOW WIDTH ADJUSTMENT BASED ON PAGE??? AND SET MAX WIDTH?????*/
 .line {
     height: 2px;
-    background-color: var(--greenD);
 
     border-radius: 50px;
     
@@ -294,6 +298,10 @@ nav a:hover {
 
 .homeLineWidth {
     width: 200px;
+}
+
+.footerLineWidth {
+    width: 75px;
 }
 
 .lineDotLeft{
@@ -307,6 +315,22 @@ nav a:hover {
     flex-direction: row-reverse;
 
     vertical-align: center;
+}
+
+.darkGreen {
+    background-color: var(--greenD);
+}
+
+.darkRed {
+    background-color: var(--redD);
+}
+
+.darkBlue {
+    background-color: var(--blueD);
+}
+
+.darkPurple {
+    background-color: var(--purpleD);
 }
 
 /*gap spacings*/
