@@ -40,6 +40,9 @@
     --sp3: 20px;
     --sp4: 45px;
     --sp5: 75px;
+
+    /*must be even for line positioning*/
+    --dotSize: 8px;
 }
 
 h1, h2 {
@@ -111,6 +114,7 @@ body {
     border: 4px solid var(--purpleD);
 }
 
+/*navigation bar*/
 .navBar {
     width: 100%;
     display: flex;
@@ -214,6 +218,11 @@ nav a:hover {
 }
 
 /*home classes*/
+.homeTitle {
+    display: flex;
+    align-items: center;
+}
+
 .homeWork {
     width: 300px;
 }
@@ -222,6 +231,13 @@ nav a:hover {
     content: "🔗";
     display:inline-block;
 }
+
+/*about classes*/
+
+
+/*work classes*/
+
+/*contact classes*/
 
 /*text colourings*/
 .whiteTxt {
@@ -238,6 +254,42 @@ nav a:hover {
     font-weight: 1000;
     text-decoration: none;
 }
+
+/*line dot decorations*/
+.dot {
+    height: var(--dotSize);
+    width: var(--dotSize);
+    background-color: var(--greenD);
+
+    border-radius: 50px;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--greenD);
+
+    border-radius: 50px;
+    
+    margin: calc((var(--dotSize) / 2) - 1px) 4px;
+}
+
+.homeLineWidth {
+    width: 200px;
+}
+
+.lineDotLeft{
+    display: flex;
+    flex-direction: row;
+
+    vertical-align: center;
+}
+.lineDotRight{
+    display: flex;
+    flex-direction: row-reverse;
+
+    vertical-align: center;
+}
+
 /*gap spacings*/
 .gap5 {
     margin: var(--sp1)

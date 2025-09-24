@@ -12,3 +12,16 @@ class HomeWorkLink extends HTMLElement {
     }
 }
 customElements.define("home-work-link", HomeWorkLink);
+
+class LineDot extends HTMLElement {
+    connectedCallback() {
+        const direction = this.getAttribute("direction");     
+        const lineWidth = this.getAttribute("lineWidth");   
+        
+        this.innerHTML = `<div class="${direction}">
+            <div class="dot"></div>
+            <div class="line ${lineWidth}"></div>
+        </div>`;
+    }
+}
+customElements.define("line-dot", LineDot);
