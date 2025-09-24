@@ -233,7 +233,26 @@ nav a:hover {
 }
 
 /*about classes*/
+/*
+//for when i have an image to put in front of the title
+.aboutTitle::before {
+}
+*/
 
+.aboutTitle {
+    margin-left: var(--sp3);
+    margin-bottom: var(--sp1);
+}
+
+.personalStatement {
+    margin-left: var(--sp3);
+    margin-right: 200px;
+}
+
+.personalStatement p{
+    font-size: x-small;
+    text-align: justify;
+}
 
 /*work classes*/
 
