@@ -125,7 +125,6 @@ body {
     gap: 7.5vw;
     
     justify-content: center;
-    text-align: center;
     
     padding: var(--sp1) var(--sp4);
 }
@@ -139,7 +138,6 @@ body {
     gap: 5vw;
     
     justify-content: center;
-    text-align: center;
     
     padding: var(--sp1) var(--sp3);
 
@@ -253,21 +251,16 @@ nav a:hover {
     text-align: justify;
 }
 
-.updatesHeader {
-    text-align: center;
-}
-
 .aboutFooter {
     display: flex;
     align-items: center;
-    text-align: center;
 }
 
 /*work classes*/
 
 /*contact classes*/
 
-/*text colourings*/
+/*text styles*/
 .whiteTxt {
     color: white;
 }
@@ -281,6 +274,10 @@ nav a:hover {
     color: var(--redB);
     font-weight: 1000;
     text-decoration: none;
+}
+
+.centerTxt {
+    text-align: center;
 }
 
 /*line dot decorations*/
