@@ -11,9 +11,9 @@
     <!--scripts definitions-->
     <script src="customComponents.js"></script>
     
-    <div class="container" id="aboutContainer">
+    <div class="container column center" id="aboutContainer">
       <!--navigation bar-->
-      <nav class="navBar">
+      <nav class="navBar row">
         <a href="home.html">home</a>
         <a href="about.html" class="active" id="aboutActive">about</a>
         <a href="work.html">my work</a>
@@ -22,7 +22,7 @@
       </nav>
 
       <!--container body-->
-      <div class="contBody">
+      <div class="contBody column">
         <!--top, personal, about me section-->
         <div class="aboutMe">
           <!--title to page-->  
@@ -31,7 +31,7 @@
             <div class="personalStatement">
               <p>
               I'm an aspiring game designer and music composer, 
-              who recently graduated from the University of Liverpool with a first-class BSc in Game Design!
+              who recently graduated with a first-class BSc in Game Design!
             </p>
             <div class="gap10"></div>
             <p>
@@ -45,15 +45,44 @@
         </div>
 
         <!--updates section-->
-        <div class="updates">
+        <div class="updatesSection">
+            <!--header-->
             <h2 class="centerTxt">here's what i've been up to recently:</h2>
-        </div>
+            <div class="gap10"></div>
+            
+            <!--update 1-->
+            <update-section 
+            direction="row" 
+            image="75px square.png" 
+            headerTxt="UPDATE TITLE" 
+            updateTxt="update test text!!!"
+            tAlign="leftTxt">
+            </update-section>
+
+            <!--update 2-->
+            <update-section 
+            direction="rRow" 
+            image="75px square.png" 
+            headerTxt="UPDATE TITLE" 
+            updateTxt="update test text!!!"
+            tAlign="rightTxt">
+            </update-section>
+            
+            <!--update 3-->
+            <update-section 
+            direction="row" 
+            image="75px square.png" 
+            headerTxt="UPDATE TITLE" 
+            updateTxt="update test text!!!"
+            tAlign="leftTxt">
+            </update-section>
+          </div>
         
         <!--about footer section-->
-        <div class="aboutFooter centerTxt">
-          <line-dot direction="lineDotLeft" ldColour="darkRed" lineWidth="footerLineWidth"></line-dot>
+        <div class="aboutFooter centerTxt row center">
+          <line-dot direction="ldLeft" ldColour="darkRed" lWidth="footerLine"></line-dot>
           <p>interested in seeing more? check out <a class="redTxt" href="work.html">my work</a>!</p>
-          <line-dot direction="lineDotRight" ldColour="darkRed" lineWidth="footerLineWidth"></line-dot>
+          <line-dot direction="ldRight" ldColour="darkRed" lWidth="footerLine"></line-dot>
         </div>
       </div>
     </div>

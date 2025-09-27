@@ -81,12 +81,9 @@ body {
 .container {
     margin: auto;
     
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     
     justify-content: center;
-    align-items: center;
     
     max-width: 95%;
     min-width: 75%;
@@ -118,8 +115,6 @@ body {
 /*navigation bar*/
 .navBar {
     width: 100%;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap-reverse;
     
     gap: 7.5vw;
@@ -131,8 +126,6 @@ body {
 
 .workNav {
     width: 100%;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap-reverse;
     
     gap: 5vw;
@@ -195,8 +188,6 @@ nav a:hover {
     background-color: white;
     width: 100%;
 
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     
     justify-content: center;
@@ -215,11 +206,6 @@ nav a:hover {
 }
 
 /*home classes*/
-.homeTitle {
-    display: flex;
-    align-items: center;
-}
-
 .homeWork {
     width: 300px;
 }
@@ -251,9 +237,31 @@ nav a:hover {
     text-align: justify;
 }
 
-.aboutFooter {
-    display: flex;
-    align-items: center;
+.updatesSection {
+    width: 100%;
+}
+
+.updatesSection u {
+    text-decoration-color: var(--redD);
+}
+
+.uSpacing {
+    margin: 0px var(--sp3);
+
+    gap: var(--sp1);
+}
+
+.uImage {
+    border-radius: 10px;
+    border: 2px solid var(--redD);
+}
+
+.uHeader {
+    flex-wrap: wrap;
+}
+
+.uText p {
+    font-size: x-small;
 }
 
 /*work classes*/
@@ -280,6 +288,14 @@ nav a:hover {
     text-align: center;
 }
 
+.leftTxt {
+    text-align: left;
+}
+
+.rightTxt{
+    text-align: right;
+}
+
 /*line dot decorations*/
 .dot {
     height: var(--dotSize);
@@ -296,22 +312,26 @@ nav a:hover {
     margin: calc((var(--dotSize) / 2) - 1px) 4px;
 }
 
-.homeLineWidth {
+.homeLine {
     width: 25vw;
 }
 
-.footerLineWidth {
+.updateLine {
+    width: 100px;
+}
+
+.footerLine{
     width: 10vw;
 }
 
-.lineDotLeft{
+.ldLeft{
     display: flex;
     flex-direction: row;
 
     vertical-align: center;
     margin-left: var(--sp2);
 }
-.lineDotRight{
+.ldRight{
     display: flex;
     flex-direction: row-reverse;
 
@@ -319,6 +339,7 @@ nav a:hover {
     margin-right: var(--sp2);
 }
 
+/*colour classes*/
 .darkGreen {
     background-color: var(--greenD);
 }
@@ -354,4 +375,29 @@ nav a:hover {
 
 .gap75 {
     margin: var(--sp5);
+}
+
+/*flex directions and alignments*/
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.rRow {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rColumn {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.center{
+    align-items: center;
 }
