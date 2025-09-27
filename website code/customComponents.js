@@ -63,7 +63,7 @@ class UpdateSection extends HTMLElement {
             <div class="uText column">
                 <div class="uHeader ${direction} center">
                     <h3 class="uTitle"><i>${headerTxt}</i></h3>
-                    <three-dots dColour="darkRed" dGap="gap5"></three-dots>
+                    <three-dots class="uDots" dColour="darkRed" dGap="gap5"></three-dots>
                 </div>
                 <p class="${tAlign}">${updateTxt}</p>
             </div>

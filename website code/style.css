@@ -216,12 +216,6 @@ nav a:hover {
 }
 
 /*about classes*/
-/*
-//for when i have an image to put in front of the title
-.aboutTitle::before {
-}
-*/
-
 .aboutTitle {
     margin-left: var(--sp3);
     margin-bottom: var(--sp1);
@@ -241,10 +235,6 @@ nav a:hover {
     width: 100%;
 }
 
-.updatesSection u {
-    text-decoration-color: var(--redD);
-}
-
 .uSpacing {
     margin: 0px var(--sp3);
 
@@ -254,6 +244,9 @@ nav a:hover {
 .uImage {
     border-radius: 10px;
     border: 2px solid var(--redD);
+
+    height: 75px;
+    width: 75px;
 }
 
 .uHeader {
@@ -262,6 +255,12 @@ nav a:hover {
 
 .uText p {
     font-size: x-small;
+}
+
+@media (max-width: 675px) {
+    .uDots {
+        display: none;
+    }
 }
 
 /*work classes*/
@@ -317,7 +316,7 @@ nav a:hover {
 }
 
 .updateLine {
-    width: 100px;
+    width: 70vw;
 }
 
 .footerLine{
@@ -400,4 +399,8 @@ nav a:hover {
 
 .center{
     align-items: center;
+}
+
+.autoMargin {
+    margin: auto;
 }
