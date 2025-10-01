@@ -17,48 +17,6 @@ class HomeWorkLink extends HTMLElement {
 }
 customElements.define("home-work-link", HomeWorkLink);
 
-/*class for creating the line and dot decoration component - just in case*/
-class LineDot extends HTMLElement {
-    connectedCallback() {
-        //whether decoration will be left or right aligned
-        const direction = this.getAttribute("direction");     
-        
-        //colour of decoration
-        const ldColour = this.getAttribute("ldColour");
-        
-        //width of the line
-        const lWidth = this.getAttribute("lWidth");   
-        
-        this.innerHTML = `<div class="${direction}">
-            <div class="dot  ${ldColour}"></div>
-            <div class="line ${lWidth} ${ldColour}"></div>
-        </div>`;
-    }
-}
-customElements.define("line-dot", LineDot);
-
-/*class for creating decoration consisting of three evenly spaced dots */
-class ThreeDots extends HTMLElement {
-    connectedCallback() {
-        //dot colour
-        const dColour = this.getAttribute("dColour");
-        
-        //gap between dots
-        const dGap = this.getAttribute("dGap");
-        
-        this.innerHTML = `<div class="row">
-            <div class="${dGap}"></div>    
-            <div class="dot ${dColour}"></div>
-            <div class="${dGap}"></div>
-            <div class="dot ${dColour}"></div>
-            <div class="${dGap}"></div>
-            <div class="dot ${dColour}"></div>
-            <div class="${dGap}"></div>
-        </div>`;
-    }
-}
-customElements.define("three-dots", ThreeDots);
-
 /*class for creating the update component in about page*/
 class UpdateSection extends HTMLElement {
     connectedCallback() {
@@ -82,9 +40,10 @@ class UpdateSection extends HTMLElement {
             <img class="uImage" src="${image}"></img>
 
             <div class="uText column">
-                <div class="uHeader ${direction} center">
+                <div class="uHeader spaceBtwn ${direction} center">
                     <h3>${headerTxt}</h3>
-                    <three-dots class="uDots" dColour="darkRed" dGap="gap5"></three-dots>
+                    <div class="line lFlex darkRed"></div> 
+                    <div class="dot darkRed"></div>
                 </div>
 
                 <p class="${tAlign}">${updateTxt}</p>
