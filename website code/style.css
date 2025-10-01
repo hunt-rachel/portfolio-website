@@ -135,6 +135,9 @@ body {
     padding: var(--sp1) var(--sp3);
 
     background-color: var(--blueD);
+
+    position: sticky;
+    top: 0;
 }
 
 .navBar a, h1 {
@@ -220,7 +223,7 @@ nav a:hover {
 }
 
 .aboutFooter {
-    padding: var(--sp2);
+    padding: var(--sp2) 0px;
 }
 
 .personalStatement {
@@ -282,6 +285,7 @@ nav a:hover {
 
 .pfTag {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
@@ -290,7 +294,7 @@ nav a:hover {
     border-radius: 5px;
 
     font-style: italic;
-    padding: 0px 3px;
+    padding: 0px 3px 1px;
 
     word-spacing: -2px;
     
@@ -304,13 +308,21 @@ nav a:hover {
     justify-content: space-between;
     gap: 15px;
 
-    margin-bottom: var(--sp3);
+    margin-top: var(--sp1);
+    margin-bottom: var(--sp2);
 }
 
 .pfImages img {
     width: 210px;
-    
-    border-radius: 5px;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.imgPadding {
+    opacity: 0;
 }
 
 /*contact classes*/
@@ -426,6 +438,10 @@ nav a:hover {
 
     .pfImages img{
         width: 128px;
+    }
+
+    .imgPadding {
+        display:none;
     }
 }
 
