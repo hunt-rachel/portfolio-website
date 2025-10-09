@@ -312,6 +312,7 @@ nav a:hover {
 
 .pfImages img{
     width: 265px;
+    height: 150px;
 
     border-radius: 10px;
 
@@ -466,6 +467,7 @@ nav a:hover {
 
     .pfImages img{
         width: 120px;
+        height: 68px;
     }
 
     .imgTxt {
