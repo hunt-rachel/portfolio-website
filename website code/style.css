@@ -142,6 +142,11 @@ body {
     z-index: 1;
 }
 
+.navAnchor {
+    position: relative;
+    top: -35px;
+}
+
 .navBar a, h1 {
     z-index: 1;
     color: white;
@@ -350,6 +355,38 @@ nav a:hover {
 }
 
 .imgPadding {
+    opacity: 0;
+}
+
+/*modal portfolio classes*/
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0,0,0,.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.modalWindow {
+    position: relative;
+    background-color: white;
+    padding: var(--sp2);
+}
+
+.modalClose {
+    position: relative;
+}
+
+#modal:not(:target) {
+    visibility: hidden;
     opacity: 0;
 }
 

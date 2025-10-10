@@ -94,8 +94,8 @@ class PortfolioCard extends HTMLElement {
 
         this.innerHTML = `
         <div class="pfContainer">
-            <a href="${link}"><img src="${image}" id="${cardId}"/></a>
-            <div class="imgTxt whiteTxt"><p>${text}</p></div>
+            <a href="${link}"><img src="${image}" id="${cardId}"/>
+            <div class="imgTxt whiteTxt"><p>${text}</p></div></a>
           </div>`;
     }
 }
