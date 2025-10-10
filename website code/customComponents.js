@@ -85,3 +85,19 @@ class PortfolioSection extends HTMLElement {
 }
 customElements.define("pf-section", PortfolioSection);
 
+class PortfolioCard extends HTMLElement {
+    connectedCallback() {
+        const link = this.getAttribute("link");
+        const image = this.getAttribute("image");
+        const cardId = this.getAttribute("cardId");
+        const text = this.getAttribute("text") ;
+
+        this.innerHTML = `
+        <div class="pfContainer">
+            <a href="${link}"><img src="${image}" id="${cardId}"/></a>
+            <div class="imgTxt whiteTxt"><p>${text}</p></div>
+          </div>`;
+    }
+}
+customElements.define("pf-card", PortfolioCard);
+
