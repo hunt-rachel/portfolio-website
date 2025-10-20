@@ -52,6 +52,7 @@
 
     /*must be even for line positioning*/
     --dotSize: 8px;
+    --dotSizeS: 4px;
 }
 
 h1, h2 {
@@ -390,17 +391,102 @@ nav a:hover {
 
 .modalWindow {
     position: relative;
-    background-color: white;
-    padding: var(--sp2);
+
+    background-color: var(--blueM);
+    border: 4px solid var(--blueD);
+
+    border-radius: 20px;
+
+    max-width: 85%;
+}
+
+.modalTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--sp1) var(--sp2);
+}
+
+.modalTitle h2 {
+    font-size: larger;
+    color: white;
 }
 
 .modalClose {
-    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: x-large;
+
+    user-select: none;
 }
 
 #modal:not(:target) {
     visibility: hidden;
     opacity: 0;
+}
+
+.modalBody {
+    background-color: white;
+
+    width: 100%;
+
+    border-top: 2px solid var(--grey);
+
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    padding:var(--sp2);
+
+    padding-bottom: 5px;
+
+    display: flex;
+    flex-direction: row;
+    gap: var(--sp2)
+}
+
+.modalBodyLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalVideo {
+    width: 320px;
+    height: 180px;
+
+    background-color: var(--blueL);
+    border-radius: 12px;
+
+    margin-bottom: 5px;
+}
+
+.modelUnderVideo {
+    width: 100%;
+}
+
+.modalTag {
+    display: flex;
+
+    gap: 5px;
+
+    padding-bottom: 5px;
+}
+
+.modalTag span{
+    background-color: var(--yellowL);
+    border-radius: 5px;
+
+    font-style: italic;
+    font-size: x-small;
+    padding: 0px 3px 1px;
+
+    word-spacing: -2px;
+    
+}
+
+.modalBodyRight p {
+    font-size: small;
 }
 
 /*contact classes*/
@@ -441,6 +527,13 @@ nav a:hover {
 .dot {
     height: var(--dotSize);
     width: var(--dotSize);
+
+    border-radius: 50px;
+}
+
+.dotS {
+    height: var(--dotSizeS);
+    width: var(--dotSizeS);
 
     border-radius: 50px;
 }
