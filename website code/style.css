@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+/*no scroll for reduced motion*/
+@media screen and (prefers-reduced-motion: reduce) {
+    *{
+        scroll-behavior: auto;
+    }
 }
 
 /*variable definitions*/
@@ -126,7 +135,7 @@ body {
 
 .workNav {
     width: 100%;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     
     gap: 5vw;
     
@@ -215,6 +224,10 @@ nav a:hover {
 }
 
 /*home classes*/
+.homeTitle {
+    margin-left: 0px;
+}
+
 .homeWork {
     width: 300px;
 }
@@ -233,13 +246,13 @@ nav a:hover {
     padding: var(--sp2) 0px;
 }
 
-.personalStatement {
-    margin-right: 200px;
-}
+/*.personalStatement {
+    
+}*/
 
 .personalStatement p{
     font-size: x-small;
-    text-align: justify;
+    text-align: left;
 }
 
 /*.updatesSection {
@@ -391,6 +404,9 @@ nav a:hover {
 }
 
 /*contact classes*/
+#contactBody {
+    text-align: center;
+}
 
 /*text styles*/
 
@@ -482,6 +498,18 @@ nav a:hover {
 @media (max-width: 675px) {
     .uDots update-section {
         display: none;
+    }
+}
+
+@media (max-width: 933px) {
+    .pfImages{
+        justify-content:center;
+
+        gap: 15px 45px;
+    }
+
+    .imgPadding {
+        display:none;
     }
 }
 
