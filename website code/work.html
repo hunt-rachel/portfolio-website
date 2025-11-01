@@ -11,6 +11,7 @@
     <!--scripts definitions-->
     <script src="customComponents.js"></script>
     <script src="openCard.js"></script>
+    <script src="portfolioInfo.JSON"></script>
     
     <div class="container column center" id="workContainer">
       <!--navigation bar-->
@@ -60,21 +61,24 @@
           link="#modal"
           image="portfolio pictures/shuffle showdown/ShShTitle.jpg"
           cardId="ShShTitle"
-          text="Shuffle Showdown Title Theme">
+          text="Shuffle Showdown Title Theme"
+          onclick="displayModal('ShShTitle')">
           </pf-card>
 
           <pf-card
           link="#modal"
           image="portfolio pictures/shuffle showdown/cr1.png"
           cardId="cr1"
-          text="Club Roland: Track 1">
+          text="Club Roland: Track 1"
+          onclick="displayModal('cr1')">
           </pf-card>
 
           <pf-card
           link="#modal"
           image="portfolio pictures/shuffle showdown/de1.png"
           cardId="de1"
-          text="Disco Express: Track 1">
+          text="Disco Express: Track 1"
+          onclick="displayModal('de1')">
           </pf-card>
 
           <pf-card
@@ -259,7 +263,7 @@
           <div class="modalWindow">
             <div class="modalTitle">
               <h2><i>*project name*</i></h2>
-              <a class="modalClose" href="#close">&times;</a>
+              <a class="modalClose" href="#close" onclick="resetTags()">&times;</a>
             </div>
             <div class="modalBody">
               <div class="modalBodyLeft">
@@ -268,18 +272,11 @@
                   <div class="dotS darkBlue"></div>  
                   <div class="line lFlex darkBlue"></div> 
                   <div class="modalTag yellowTxt row">
-                    <p id="modalTag1"><span>test</span></p>
-                    <p id="modalTag2"><span>test</span></p>
-                    <p id="modalTag3"><span>test</span></p>
                   </div>
                 </div>
               </div>
               <div class="modalBodyRight">
-                <p id="modalText">test modal paragraph text width
-                   test modal paragraph text width
-                   test modal paragraph text width 
-                   test modal paragraph text width 
-                </p>
+                <p id="modalText"></p>
               </div>
             </div>
           </div>
