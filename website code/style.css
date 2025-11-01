@@ -443,7 +443,7 @@ nav a:hover {
 
     display: flex;
     flex-direction: row;
-    gap: var(--sp2)
+    gap: var(--sp2);
 }
 
 .modalBodyLeft {
