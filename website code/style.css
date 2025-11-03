@@ -69,6 +69,8 @@ body {
     padding-top: 5vh;
     padding-bottom: 5vh;
     justify-content: center;
+
+    min-width: 400px;
 }
 
 #homeBody {
@@ -185,9 +187,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/*nav a.active {
-}*/
-
 #homeActive {
     background-color: var(--greenD);
 }
@@ -229,13 +228,39 @@ nav a:hover {
     margin-left: 0px;
 }
 
-.homeWork {
-    width: 300px;
+/*.homeContent {
+
+}*/
+
+.homeVideos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp2);
+    padding-bottom: var(--sp2);
 }
 
-.homeWorkText::before {
-    content: "🔗";
-    display:inline-block;
+.homeVid video {
+    border-radius: 12px;
+    border: 2px solid var(--greenD);
+    object-fit: cover;
+}
+
+.quickLinks {
+    padding-top: var(--sp3);
+    padding-bottom: var(--sp1);
+    
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.quickLinks p {
+    font-weight: 1000;
+}
+
+.workLinks {
+    gap: 4vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*about classes*/

@@ -2,6 +2,23 @@
 
 /*class for links on home page to direct to work sections*/
 
+//class for home page videos and their captions
+class HomeVideo extends HTMLElement {
+    connectedCallback() {
+        const vidLink = this.getAttribute("vidLink");
+
+        const vidCaption = this.getAttribute("vidCaption");
+
+        this.innerHTML = `<div class=homeVid>
+            <video width = "256px" height="144px" src="${vidLink}" controls>
+                your browser does not support this video!
+            </video>
+            <p class="centerTxt">${vidCaption}</p>
+        </div>`;
+    }
+}
+customElements.define("home-video", HomeVideo);
+
 class HomeWorkLink extends HTMLElement {
     connectedCallback() {
         //link to individual sections of the 'my work' page
@@ -11,7 +28,7 @@ class HomeWorkLink extends HTMLElement {
         const linkText = this.getAttribute("linkText");
         
         this.innerHTML = `<div class="homeWork">
-            <p class="homeWorkText">my <a class="yellowTxt" href="${workLink}">${linkText}</a> work</p>
+            <p class="homeWorkText"><a class="yellowTxt" href="${workLink}">${linkText}</a></p>
         </div>`;
     }
 }
