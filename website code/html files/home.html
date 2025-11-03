@@ -36,26 +36,55 @@
         <div class="gap5"></div>
         
         <!--video section-->
-        <div class="videoSlides">
-          <video width="320px" height="180px" src="../videos/showreels/Creative Showreel - Rachel Hunt.mp4" controls>
-            your browser does not support this video!
-          </video>
-          <p>my creative audio showreel</p>
+        <div class="homeContent column center">
+          <div class="homeVideos row">
+            <!--creative audio showreel-->
+            <home-video
+            vidLink="../videos/showreels/Game Designer Showreel - Rachel Hunt.mp4"
+            vidCaption="game designer showreel">
+            </home-video>
+            
+            <home-video
+            vidLink="../videos/showreels/Creative Showreel - Rachel Hunt.mp4"
+            vidCaption="creative audio showreel">
+            </home-video>
+
+            <!--technical audio showreel-->
+            <home-video
+            vidLink="../videos/showreels/Technical Showreel - Rachel Hunt.mp4"
+            vidCaption="technical audio showreel">
+            </home-video>
+          </div>
+        
+          <!--quick links title-->
+          <div class="quickLinks spaceBtwn row center">
+            <div class="dot darkGreen"></div>
+            <div class="line lFlex darkGreen"></div> 
+            <p class="centerTxt">quick links to my work</h2>
+            <div class="line lFlex darkGreen"></div>
+            <div class="dot darkGreen"></div>
+          </div>
+
+          <!--work links-->
+          <div class="workLinks row centerTxt">
+            <home-work-link
+              workLink="work.html";
+              linkText="Shuffle Showdown"
+            ></home-work-link>
+
+            <home-work-link
+              workLink="work.html";
+              linkText="software development"
+            ></home-work-link>
+
+            <home-work-link
+              workLink="work.html";
+              linkText="music composition"
+            ></home-work-link>
+          </div>
+
         </div>
         
-        <!--work links-->
-        <home-work-link
-          workLink="work.html";
-          linkText="Shuffle Showdown"
-        ></home-work-link>
-        <home-work-link
-          workLink="work.html";
-          linkText="software development"
-        ></home-work-link>
-        <home-work-link
-          workLink="work.html";
-          linkText="music composition"
-        ></home-work-link>
       </div>
     </div>
   </body>

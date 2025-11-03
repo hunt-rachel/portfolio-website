@@ -439,7 +439,7 @@ nav a:hover {
 
     padding:var(--sp2);
 
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 
     display: flex;
     flex-direction: row;
@@ -449,16 +449,17 @@ nav a:hover {
 .modalBodyLeft {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .modalVideo {
     width: 320px;
     height: 180px;
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--blueD) white;
 
-    background-color: var(--blueL);
-    border-radius: 12px;
-
-    margin-bottom: 5px;
+    align-items: center;
 }
 
 .modelUnderVideo {
@@ -485,8 +486,25 @@ nav a:hover {
     
 }
 
+.modalBodyRight {
+    max-height: 210px;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--blueD) white;
+}
+
 .modalBodyRight p {
-    font-size: small;
+    font-size: smaller;
+}
+
+.modalBodyRight a {
+    color: var(--yellowB);
+}
+
+.cardTopInfo {
+    font-style: italic;
+    font-weight: 1000;
 }
 
 /*contact classes*/
