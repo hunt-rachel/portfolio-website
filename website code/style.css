@@ -70,7 +70,7 @@ body {
     padding-bottom: 5vh;
     justify-content: center;
 
-    min-width: 400px;
+    min-width: 600px;
 }
 
 #homeBody {
@@ -684,9 +684,15 @@ nav a.active {
     .imgPadding {
         display:none;
     }
+
+    .portfolioTag {
+        display: none;
+    }
 }
 
-@media (max-width: 534px) {
+
+/*future small screen functionality for when can get responsive nav bar to work*/
+/*@media (max-width: 534px) {
     .pfTag {
         justify-content: center;
     }
@@ -715,7 +721,7 @@ nav a.active {
     .imgPadding {
         display:none;
     }
-}
+}*/
 
 /*flex directions and alignments*/
 .row {
