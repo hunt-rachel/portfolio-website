@@ -10,11 +10,11 @@ class HomeVideo extends HTMLElement {
         const vidCaption = this.getAttribute("vidCaption");
 
         this.innerHTML = `<div class=homeVid>
-            <video width = "427px" height="240px" src="${vidLink}" controls>
+            <iframe width = "427px" height="240px" src="${vidLink}" controls>
                 your browser does not support this video!
-            </video>
-            <p class="centerTxt">${vidCaption}</p>
-        </div>`;
+            </iframe>
+        </div>
+        <p class="centerTxt">${vidCaption}</p>`;
     }
 }
 customElements.define("home-video", HomeVideo);

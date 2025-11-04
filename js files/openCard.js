@@ -22,7 +22,7 @@ function displayModal(mID) {
         };
 
         for(let j = 0; j < modalObj[mID].videos.length; j++) {
-            let vid = document.createElement("video");
+            let vid = document.createElement("iframe");
             vid.setAttribute("class", "modalVideo");
             vid.controls="controls";
             vid.src=modalObj[mID].videos[j];
@@ -68,7 +68,7 @@ const modalObj = {
     ShShTitle: {
         title: "Shuffle Showdown Title Theme",
         videos: [
-            "../videos/shuffle showdown/Shuffle Showdown Title Screen.mp4"
+            "https://youtube.com/embed/VrbB-0E_seo"
         ],
         tags: [
             "logic pro x",
@@ -87,8 +87,8 @@ const modalObj = {
     cr1: {
         title: `Club Roland: Track 1`,
         videos: [
-            "../videos/shuffle showdown/Club Roland - Track 1 Gameplay.mp4",
-            "../videos/shuffle showdown/Club Roland - Track 1 Beatmap.mp4"
+            "https://youtube.com/7nq0zOKwZ2s",
+            "https://youtube.com/embed/HeH_8Nj6V9I"
         ],
         tags: [
             "logic pro x",
@@ -109,8 +109,8 @@ const modalObj = {
     de1: {
         title: `Disco Express: Track 1`,
         videos: [
-            "../videos/shuffle showdown/Disco Express - Track 1 Gameplay.mp4",
-            "../videos/shuffle showdown/Disco Express - Track 1 Beatmap.mp4"
+            "https://youtube.com/embed/-yr42leNfeo",
+            "https://youtube.com/embed/TLSxI2MoKQQ"
         ],
         tags: [
             "logic pro x",
@@ -132,7 +132,7 @@ const modalObj = {
     de2: {
         title: "Disco Express: Track 2",
         videos: [
-            "../videos/shuffle showdown/Disco Express - Track 2 Gameplay.mp4"
+            "https://youtube.com/embed/nBPV4MbYtKE"
         ],
         tags: [
             "logic pro x",
@@ -150,8 +150,8 @@ const modalObj = {
     dd1: {
         title: "Diva Docks: Track 1",
         videos: [
-            "../videos/shuffle showdown/Diva Docks - Track 1 Gameplay.mp4",
-            "../videos/shuffle showdown/ Diva Docks - Track 1 Beatmap.mp4"
+            "https://youtube.com/embed/aMCCZotMD-Y",
+            "https://youtube.com/embed/_p1nVOX4JvY"
         ],
         tags: [
             "logic pro x",
@@ -173,7 +173,7 @@ const modalObj = {
     dd2: {
         title: "Diva Docks: Track 2",
         videos: [
-            "../videos/shuffle showdown/Diva Docks - Track 2 Gameplay.mp4"
+            "https://youtube.com/embed/xBQSO9jq86M"
         ],
         tags: [
             "logic ppro x",
@@ -192,8 +192,8 @@ const modalObj = {
     gg1: {
         title: "Groovy Gardens: Track 1",
         videos: [
-            "../videos/shuffle showdown/Groovy Gardens - Track 1 Gameplay.mp4",
-            "../videos/shuffle showdown/Groovy Gardens - Track 1 Beatmap.mp4"
+            "https://youtube.com/R22WmnZKxaI",
+            "https://youtube.com/embed/TCd6ZNuBruE"
         ],
         tags: [
             "logic pro x",
@@ -215,7 +215,7 @@ const modalObj = {
     gg2: {
         title: "Groovy Gardens: Track 2",
         videos: [
-            "../videos/shuffle showdown/Groovy Gardens - Track 2 Gameplay.mp4"
+            "https://youtube.com/embed/EFiu6kTc0mc"
         ],
         tags: [
             "logic pro x",
@@ -233,8 +233,8 @@ const modalObj = {
     rr1: {
         title: "Roland Rooftops: Track 1",
         videos: [
-            "../videos/shuffle showdown/Roland Rooftops - Track 1 Gameplay.mp4",
-            "../videos/shuffle showdown/Roland Rooftops - Track 1 Beatmap.mp4"
+            "https://youtube.com/embed/le5dKZ4Ddto",
+            "https://youtube.com/embed/aAK4_qJ5Las"
         ],
         tags: [
             "logic pro x",
@@ -256,7 +256,7 @@ const modalObj = {
     tfs: {
         title: "The Final Showdown",
         videos: [
-            "../videos/shuffle showdown/The Final Showdown Gameplay.mp4"
+            "https://youtube.com/embed/GKz7c5O3WEo"
         ],
         tags: [
             "logic pro x",
@@ -276,8 +276,8 @@ const modalObj = {
     ShShFMOD: {
         title: "Shuffle Showdown FMOD",
         videos: [
-            "../videos/shuffle showdown/Diva Docks 1 End Early.mp4",
-            "../videos/shuffle showdown/Roland Rooftops End Early.mp4"
+            "https://youtube.com/embed/IRIHEzjyses",
+            "https://youtube.com/embed/pYM_yKle1ew"
         ],
         tags: [
             "fmod",
@@ -297,7 +297,7 @@ const modalObj = {
     cbg: {
         title: "Composition Brief Generator",
         videos: [
-            "../videos/software development/Composition Brief Generator Video.mp4"
+            "https://youtube.com/embed/8DGWWaOGGYA"
         ],
         tags: [
             "unity",
@@ -319,7 +319,7 @@ const modalObj = {
     eightbp: {
         title: "8 Ball Pool Game",
         videos: [
-            "../videos/software development/8 Ball Pool Gameplay Video.mp4"
+            "https://youtube.com/embed/Z7yNoT6CUgE"
         ],
         tags: [
             "unity",
@@ -342,7 +342,7 @@ const modalObj = {
     ms: {
         title: "Minesweeper Game",
         videos: [
-            "../videos/software development/Minesweeper Gameplay Video.mp4"
+            "https://youtube.com/embed/QUeOSwix6jA"
         ],
         tags: [
             "unity",
@@ -360,7 +360,7 @@ const modalObj = {
     fdma: {
         title: "Food and Drink Map App",
         videos: [
-            "../videos/software development/Food and Drink Map video.mp4"
+            "https://youtube.com/embed/Bln33CWulws"
         ],
         tags: [
             "swift",
@@ -381,7 +381,7 @@ const modalObj = {
     tcga: {
         title: "'The Chase' Game App",
         videos: [
-            "../videos/software development/The Chase App Video.mov"
+            "https://youtube.com/embed/1eMIyXX9pD4"
         ],
         tags: [
             "swift",
@@ -402,8 +402,8 @@ const modalObj = {
     afbm: {
         title: "Adaptive Final Boss Music",
         videos: [
-            "../videos/music composition/Final Boss Music Musescore.mp4",
-            "../videos/music composition/Final Boss Music FMOD Video.mp4",
+            "https://youtube.com/embed/hrTtGqBPzPs",
+            "https://youtube.com/embed/8Dz7NhOXNLA",
         ],
         tags: [
             "musescore 4",
@@ -425,8 +425,8 @@ const modalObj = {
     argm: {
         title: "Adaptive Racing Game Music",
         videos: [
-            "../videos/music composition/Adaptive Racer Unity.mp4",
-            "../videos/music composition/Adaptive Racer FMOD.mp4"
+            "https://youtube.com/embed/0p6dxf9QoXU",
+            "https://youtube.com/embed/-53Z9c1j30w"
         ],
         tags: [
             "cubase 12",
@@ -452,7 +452,7 @@ const modalObj = {
     rsfa: {
         title: "Robot Short Film Audio",
         videos: [
-            "../videos/music composition/Robot Short Film.mov",
+            "https://youtube.com/embed/nQS1bf031SQ",
         ],
         tags: [
             "logic pro x",
@@ -472,7 +472,7 @@ const modalObj = {
     almc: {
         title: "A Level Music Composition",
         videos: [
-            "../videos/music composition/A Level Music Composition.mp4"
+            "https://youtube.com/embed/Je9aoOIaETQ"
         ],
         tags: [
             "musescore 4",
