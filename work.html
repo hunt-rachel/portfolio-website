@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body id="workBody">
+    <!--scripts definitions-->
+    <script src="../js files/customComponents.js"></script>
+    <script src="../js files/openCard.js"></script>
+    <script src="../js files/portfolioInfo.JSON"></script>
+    
+    <div class="container column center" id="workContainer">
+      <!--navigation bar-->
+      <nav class="navBar row center">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="work.html" class="active" id="workActive">my work</a>
+        <a href="contact.html">contact</a>
+        <h1 class="portfolioTag"><i>rachel's portfolio</i></h1>
+        <!--<a><hm-icon></hm-icon></a>-->
+      </nav>
+
+      <!--secondary navigation bar for work page-->
+      <nav class="workNav row">
+        <a href="#"><i>shuffle showdown</i></a>
+        <a href="#sd anchor"><i>software development</i></a>
+        <a href="#mc anchor"><i>music composition</i></a>
+      </nav>
+
+      <!--container body-->
+      <div class="workBody column">
+        <!--shuffle showdown section (maybe move lower down once something else becomes priority??)-->
+        <div class="pfSpacing row">
+            <div class="pfText column">
+                <div class="pfHeader spaceBtwn row center">
+                    <h3>SHUFFLE SHOWDOWN</h3>
+                    <div class="line lFlex darkBlue"></div> 
+                    <div class="dot darkBlue"></div>  
+                </div>
+
+                <p class="tAlign">
+                  All the music I composed and levels I designed, working hand in hand for Team Roland's debut published title! 
+                  Shuffle Showdown is a fast paced rhythm-action roguelite where players battle eachother in a fight for the spotlight.
+                  With super ability synergies and chaotic couch PvP competition, you can dance the night away!
+                  <br><br>
+                  Shuffle Showdown is available to <a href="https://store.steampowered.com/app/3907820/SHUFFLE_SHOWDOWN/" target="_blank">download for free on Steam</a>.
+                </p>
+                
+                <div class="pfTag yellowTxt row">
+                  <p><span>logic pro x</span></p>
+                  <p><span>fmod</span></p>
+                  <p><span>unity</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pfImages">
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/ShShTitle.jpg"
+          cardId="ShShTitle"
+          text="Shuffle Showdown Title Theme"
+          onclick="displayModal('ShShTitle')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/cr1.png"
+          cardId="cr1"
+          text="Club Roland: Track 1"
+          onclick="displayModal('cr1')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/de1.png"
+          cardId="de1"
+          text="Disco Express: Track 1"
+          onclick="displayModal('de1')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/de2.png"
+          cardId="de2"
+          text="Disco Express: Track 2"
+          onclick="displayModal('de2')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/dd1.png"
+          cardId="dd1"
+          text="Diva Docks: Track 1"
+          onclick="displayModal('dd1')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/dd2.png"
+          cardId="dd2"
+          text="Diva Docks: Track 2"
+          onclick="displayModal('dd2')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/gg1.png"
+          cardId="gg1"
+          text="Groovy Gardens: Track 1"
+          onclick="displayModal('gg1')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/gg2.png"
+          cardId="gg2"
+          text="Groovy Gardens: Track 2"
+          onclick="displayModal('gg2')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/rr1.png"
+          cardId="rr1"
+          text="Roland Rooftops: Track 1"
+          onclick="displayModal('rr1')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/tfs.png"
+          cardId="tfs"
+          text="The Final Showdown"
+          onclick="displayModal('tfs')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures/shuffle showdown/ShShFMOD.png"
+          cardId="ShSh FMOD"
+          text="Shuffle Showdown FMOD"
+          onclick="displayModal('ShShFMOD')">
+          </pf-card>
+          
+          <!--padding for spacing-->
+          <img src="../portfolio pictures/blue 640 360px.png" class="imgPadding"/>
+        </div>
+
+        <!--software development section-->
+        <div class="navAnchor" id="sd anchor"></div>
+        <div class="pfSpacing rRow">
+            <div class="pfText column">
+                <div class="pfHeader rRow center">
+                  <h3>SOFTWARE DEVELOPMENT</h3>
+                  <div class="line lFlex darkBlue"></div> 
+                  <div class="dot darkBlue"></div>  
+                </div>
+
+                <p class="tAlign">
+                  Small games and apps I have worked on independently - both for assignments and personal development!
+                  This website has been a software development project, where I have taught myself the basics of html, css, and javascript programming from complete scratch! <br> 
+                  
+                </p>
+                
+                <div class="pfTag yellowTxt rRow">
+                  <p><span>javascript</span></p>
+                  <p><span>css</span></p>
+                  <p><span>html</span></p>
+                  <p><span>xcode</span></p>
+                  <p><span>swift</span></p>
+                  <p><span>c#</span></p>
+                  <p><span>unity</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pfImages">
+  
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\software development\cbg.png"
+          cardId="cbg"
+          text="Composition Brief Generator"
+          onclick="displayModal('cbg')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\software development\8bp.png"
+          cardId="8bp"
+          text="8 Ball Pool Game"
+          onclick="displayModal('eightbp')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\software development\ms.png"
+          cardId="ms"
+          text="Minesweeper Game"
+          onclick="displayModal('ms')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\software development\fdma.png"
+          cardId="fdma"
+          text="Food and Drink Map App"
+          onclick="displayModal('fdma')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\software development\tcga.png"
+          cardId="tcga"
+          text="The Chase Game App"
+          onclick="displayModal('tcga')">
+          </pf-card>
+          
+          <!--padding for spacing-->
+          <img src="../portfolio pictures/blue 640 360px.png" class="imgPadding"/>
+        </div>
+
+        <!--music composition section-->
+        <div class="navAnchor" id="mc anchor"></div>
+        <div class="pfSpacing row">
+            <div class="pfText column">
+                <div class="pfHeader spaceBtwn row center">
+                    <h3>MUSIC COMPOSITION</h3>
+                    <div class="line lFlex darkBlue"></div> 
+                    <div class="dot darkBlue"></div>  
+                </div>
+
+                <p class="tAlign">
+                  Standalone music projects I have composed and produced, with the intention of fitting to media such as games or film.
+                </p>
+                
+                <div class="pfTag yellowTxt row">
+                  <p><span>adaptive soundtracks</span></p>
+                  <p><span>musescore 4</span></p>
+                  <p><span>logic pro x</span></p>
+                  <p><span>fmod</span></p>
+                  <p><span>foley recording</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pfImages">
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\music composition\204 fbm.png"
+          cardId="afbm"
+          text="Adaptive Final Boss Music"
+          onclick="displayModal('afbm')">
+          </pf-card>
+          
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\music composition\206 rm.png"
+          cardId="argm"
+          text="Adaptive Racing Music"
+          onclick="displayModal('argm')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\music composition\3bc rm.png"
+          cardId="rsfa"
+          text="Robot Short Film Audio"
+          onclick="displayModal('rsfa')">
+          </pf-card>
+
+          <pf-card
+          link="#modal"
+          image="../portfolio pictures\music composition\alm fc.png"
+          cardId="alm fc"
+          text="A Level Music Composition"
+          onclick="displayModal('almc')">
+          </pf-card>
+        </div>
+
+        <!--modal window test-->
+        <div id="modal">
+          <div class="modalWindow">
+            <div class="modalTitle">
+              <h2><i>*project name*</i></h2>
+              <a class="modalClose" href="#close" onclick="resetModal()">&times;</a>
+            </div>
+            <div class="modalBody">
+              <div class="modalBodyLeft">
+                <div class="modalVideo" id="modVid"></div>
+                <div class="modelUnderVideo row center">
+                  <div class="dotS darkBlue"></div>  
+                  <div class="line lFlex darkBlue"></div> 
+                  <div class="modalTag yellowTxt row">
+                  </div>
+                </div>
+              </div>
+              <div class="modalBodyRight">
+                <p id="modalText"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

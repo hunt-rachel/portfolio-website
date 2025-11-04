@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body id="homeBody">
+    <!--scripts definitions-->
+    <script src="../js files/customComponents.js"></script>
+    
+    <div class="container column center" id="homeContainer">
+      <!--navigation bar-->
+      <nav class="navBar row">
+        <a href="index.html" class="active" id="homeActive">home</a>
+        <a href="about.html">about</a>
+        <a href="work.html">my work</a>
+        <a href="contact.html">contact</a>
+        <h1 class="portfolioTag"><i>rachel's portfolio</i></h1>
+      </nav>
+
+      <!--container body-->
+      <div class="contBody column center">
+        <!--title section-->
+        <div class="homeTitle spaceBtwn row center">
+          <div class="dot darkGreen"></div>
+          <div class="line lFlex darkGreen"></div> 
+          <h2 class="centerTxt">hi, i'm rachel!</h2>
+          <div class="line lFlex darkGreen"></div>
+          <div class="dot darkGreen"></div>
+        </div>
+        <p class="centerTxt">game designer · programmer · music composer</p>
+
+        <div class="gap5"></div>
+        
+        <!--video section-->
+        <div class="homeContent column center">
+          <div class="homeVideos row">
+            <!--creative audio showreel-->
+            <home-video
+            vidLink="../videos/showreels/Game Designer Showreel - Rachel Hunt.mp4"
+            vidCaption="game designer showreel">
+            </home-video>
+            
+            <home-video
+            vidLink="../videos/showreels/Creative Showreel - Rachel Hunt.mp4"
+            vidCaption="creative audio showreel">
+            </home-video>
+
+            <!--technical audio showreel-->
+            <home-video
+            vidLink="../videos/showreels/Technical Showreel - Rachel Hunt.mp4"
+            vidCaption="technical audio showreel">
+            </home-video>
+          </div>
+        
+          <!--quick links title-->
+          <div class="quickLinks spaceBtwn row center">
+            <div class="dot darkGreen"></div>
+            <div class="line lFlex darkGreen"></div> 
+            <p class="centerTxt">quick links to my work</h2>
+            <div class="line lFlex darkGreen"></div>
+            <div class="dot darkGreen"></div>
+          </div>
+
+          <!--work links-->
+          <div class="workLinks row centerTxt">
+            <home-work-link
+              workLink="work.html#";
+              linkText="Shuffle Showdown"
+            ></home-work-link>
+
+            <home-work-link
+              workLink="work.html#sd anchor";
+              linkText="software development"
+            ></home-work-link>
+
+            <home-work-link
+              workLink="work.html#mc anchor";
+              linkText="music composition"
+            ></home-work-link>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
