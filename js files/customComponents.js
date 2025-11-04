@@ -10,7 +10,7 @@ class HomeVideo extends HTMLElement {
         const vidCaption = this.getAttribute("vidCaption");
 
         this.innerHTML = `<div class=homeVid>
-            <video width = "640px" height="360px" src="${vidLink}" controls>
+            <video width = "427px" height="240px" src="${vidLink}" controls>
                 your browser does not support this video!
             </video>
             <p class="centerTxt">${vidCaption}</p>

@@ -53,6 +53,14 @@
     /*must be even for line positioning*/
     --dotSize: 8px;
     --dotSizeS: 4px;
+
+    /*font sizes*/
+    --xxSmallF: 10pt;
+    --xSmallF: 12pt;
+    --smallF: 14pt;
+    --mediumF: 16pt;
+    --largeF: 24pt;
+    --xLargeF: 36pt;
 }
 
 h1, h2 {
@@ -164,7 +172,7 @@ body {
     color: white;
     text-decoration: none;
     font-family: var(--ff1);
-    font-size: larger;
+    font-size: var(--largeF);
     font-weight: 100;
 
     display: inline-block;
@@ -178,7 +186,7 @@ body {
     color: white;
     text-decoration: none;
     font-family: var(--ff2);
-    font-size: small;
+    font-size: var(--smallF);
     font-weight: 300;
 
     display: inline-block;
@@ -302,6 +310,7 @@ nav a.active {
 
 /*about classes*/
 .aboutTitle {
+    font-size: var(--largeF);
     margin-bottom: var(--sp1);
 }
 
@@ -309,18 +318,22 @@ nav a.active {
     padding: var(--sp2) 0px;
 }
 
+.aboutFooter p {
+    font-size: var(--smallF);
+}
+
 /*.personalStatement {
     
 }*/
 
 .personalStatement p{
-    font-size: x-small;
+    font-size: var(--xSmallF);
     text-align: left;
 }
 
-/*.updatesSection {
-
-}*/
+.updatesSection h2{
+    font-size: var(--largeF);
+}
 
 .uSpacing {
     gap: var(--sp1);
@@ -330,17 +343,18 @@ nav a.active {
     border-radius: 10px;
     border: 2px solid var(--redD);
 
-    height: 75px;
-    width: 75px;
+    height: 150px;
+    width: 150px;
 }
 
 .uHeader {
     flex-wrap: wrap;
     font-style: italic;
+    font-size: var(--smallF);
 }
 
 .uText p {
-    font-size: x-small;
+    font-size: var(--xSmallF);
 }
 
 .uText {
@@ -353,13 +367,14 @@ nav a.active {
 }
 
 .pfText p{
-    font-size: x-small;
+    font-size: var(--xSmallF);
     margin-bottom: 5px;
 }
 
 .pfHeader {
     flex-wrap: wrap;
     font-style: italic;
+    font-size: var(--mediumF);
 }
 
 .pfTag {
@@ -376,7 +391,7 @@ nav a.active {
     padding: 0px 3px 1px;
 
     word-spacing: -2px;
-    
+    font-size: var(--xSmallF);
 }
 
 .pfImages {
@@ -392,8 +407,8 @@ nav a.active {
 }
 
 .pfImages img{
-    width: 265px;
-    height: 150px;
+    width: 320px;
+    height: 180px;
 
     border-radius: 10px;
 
@@ -471,7 +486,7 @@ nav a.active {
 }
 
 .modalTitle h2 {
-    font-size: larger;
+    font-size: var(--largeF);
     color: white;
 }
 
@@ -479,7 +494,7 @@ nav a.active {
     text-decoration: none;
     color: white;
     font-weight: 400;
-    font-size: x-large;
+    font-size: var(--largeF);
 
     user-select: none;
 }
@@ -515,13 +530,14 @@ nav a.active {
 }
 
 .modalVideo {
-    width: 320px;
-    height: 180px;
+    width: 640px;
+    height: 360px;
     
     scrollbar-width: thin;
     scrollbar-color: var(--blueD) white;
 
     align-items: center;
+    padding-bottom: var(--sp1);
 }
 
 .modelUnderVideo {
@@ -545,7 +561,7 @@ nav a.active {
     padding: 0px 3px 1px;
 
     word-spacing: -2px;
-    
+    font-size: var(--smallF);
 }
 
 .modalBodyRight {
@@ -557,7 +573,7 @@ nav a.active {
 }
 
 .modalBodyRight p {
-    font-size: smaller;
+    font-size: var(--smallF);
 }
 
 .modalBodyRight a {
@@ -572,6 +588,14 @@ nav a.active {
 /*contact classes*/
 #contactBody {
     text-align: center;
+}
+
+.contBody h2 {
+    font-size: var(--xLargeF);
+}
+
+.contBody p {
+    font-size: var(--mediumF);
 }
 
 /*text styles*/
