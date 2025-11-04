@@ -87,7 +87,7 @@ const modalObj = {
     cr1: {
         title: `Club Roland: Track 1`,
         videos: [
-            "https://youtube.com/7nq0zOKwZ2s",
+            "https://youtube.com/embed/7nq0zOKwZ2s",
             "https://youtube.com/embed/HeH_8Nj6V9I"
         ],
         tags: [
@@ -192,7 +192,7 @@ const modalObj = {
     gg1: {
         title: "Groovy Gardens: Track 1",
         videos: [
-            "https://youtube.com/R22WmnZKxaI",
+            "https://youtube.com/embed/R22WmnZKxaI",
             "https://youtube.com/embed/TCd6ZNuBruE"
         ],
         tags: [

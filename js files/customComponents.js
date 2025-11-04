@@ -13,8 +13,8 @@ class HomeVideo extends HTMLElement {
             <iframe width = "427px" height="240px" src="${vidLink}" controls>
                 your browser does not support this video!
             </iframe>
-        </div>
-        <p class="centerTxt">${vidCaption}</p>`;
+            <p class="centerTxt">${vidCaption}</p>
+        </div>`;
     }
 }
 customElements.define("home-video", HomeVideo);

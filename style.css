@@ -273,6 +273,10 @@ nav a.active {
     margin-left: 0px;
 }
 
+.homeSubtitle {
+    font-size: var(--mediumF);
+}
+
 /*.homeContent {
 
 }*/
@@ -280,12 +284,16 @@ nav a.active {
 .homeVideos {
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--sp2);
+    gap: var(--sp3);
     padding-bottom: var(--sp2);
 }
 
 .homeVid video {
     object-fit: cover;
+}
+
+.homeVid p {
+    font-size: var(--mediumF);
 }
 
 .quickLinks {
@@ -298,12 +306,17 @@ nav a.active {
 
 .quickLinks p {
     font-weight: 1000;
+    font-size: var(--largeF);
 }
 
 .workLinks {
     gap: 4vw;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.homeWork p {
+    font-size: var(--mediumF);
 }
 
 /*about classes*/
@@ -317,7 +330,7 @@ nav a.active {
 }
 
 .aboutFooter p {
-    font-size: var(--smallF);
+    font-size: var(--mediumF);
 }
 
 /*.personalStatement {
@@ -330,7 +343,7 @@ nav a.active {
 }
 
 .updatesSection h2{
-    font-size: var(--largeF);
+    font-size: var(--mediumF);
 }
 
 .uSpacing {
@@ -343,12 +356,13 @@ nav a.active {
 
     height: 150px;
     width: 150px;
+    padding-right: var(--sp2);
 }
 
 .uHeader {
     flex-wrap: wrap;
     font-style: italic;
-    font-size: var(--smallF);
+    font-size: var(--mediumF);
 }
 
 .uText p {
@@ -372,7 +386,7 @@ nav a.active {
 .pfHeader {
     flex-wrap: wrap;
     font-style: italic;
-    font-size: var(--mediumF);
+    font-size: var(--largeF);
 }
 
 .pfTag {
@@ -405,10 +419,10 @@ nav a.active {
 }
 
 .pfImages img{
-    width: 320px;
-    height: 180px;
+    width: 640px;
+    height: 360px;
 
-    border-radius: 10px;
+    border-radius: 20px;
 
     object-fit: cover;
     overflow: hidden;
@@ -473,6 +487,8 @@ nav a.active {
     border-radius: 20px;
 
     max-width: 85%;
+
+    padding: var(--sp2);
 }
 
 .modalTitle {
@@ -563,7 +579,7 @@ nav a.active {
 }
 
 .modalBodyRight {
-    max-height: 210px;
+    max-height: 420px;
     overflow-y: auto;
 
     scrollbar-width: thin;
@@ -589,11 +605,11 @@ nav a.active {
 }
 
 .contBody h2 {
-    font-size: var(--xLargeF);
+    font-size: var(--largeF);
 }
 
 .contBody p {
-    font-size: var(--mediumF);
+    font-size: var(--largeF);
 }
 
 /*text styles*/
