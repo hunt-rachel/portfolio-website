@@ -173,7 +173,6 @@ body {
     padding: var(--sp1);
 }
 
-
 .workNav a {
     z-index: 1;
     color: white;
@@ -193,6 +192,20 @@ nav a:hover {
 nav a.active {
     text-decoration: underline;
 }
+
+/*potential future funtionality for creating a responsive nav bar*/
+
+/*.hmIcon {
+    display: flex;
+    gap: 5px;
+}
+
+.hmLine {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+}*/
 
 /*#homeActive {
     background-color: var(--greenD);

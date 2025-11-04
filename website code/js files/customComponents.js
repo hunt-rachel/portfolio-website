@@ -118,3 +118,15 @@ class PortfolioCard extends HTMLElement {
 }
 customElements.define("pf-card", PortfolioCard);
 
+class HamburgerMenuIcon extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML =`<div class="hmIcon column">
+          <div class="hmLine"></div>
+          <div class="hmLine"></div>
+          <div class="hmLine"></div>
+        </div>
+        `;
+    }
+}
+customElements.define("hm-icon", HamburgerMenuIcon);
+
