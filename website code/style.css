@@ -133,7 +133,7 @@ body {
     
     justify-content: space-evenly;
     
-    padding: var(--sp1) var(--sp4);
+    padding: 0px var(--sp4);
 }
 
 .workNav {
@@ -169,7 +169,10 @@ body {
 
     display: inline-block;
     vertical-align: middle;
+
+    padding: var(--sp1);
 }
+
 
 .workNav a {
     z-index: 1;
@@ -187,21 +190,25 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#homeActive {
+nav a.active {
+    text-decoration: underline;
+}
+
+/*#homeActive {
     background-color: var(--greenD);
-}
+}*/
 
-#aboutActive {
+/*#aboutActive {
     background-color: var(--redD);
-}
+}*/
 
-#workActive {
+/*#workActive {
     background-color: var(--blueD);
-}
+}*/
 
-#contactActive {
+/*#contactActive {
     background-color: var(--purpleD);
-}
+}*/
 
 .contBody {
     background-color: white;
@@ -222,6 +229,23 @@ nav a:hover {
 
     padding: var(--sp2) var(--sp3);
 }
+
+.workBody {
+    background-color: white;
+    width: 100%;
+
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 46px;
+
+    border-top: 2px solid var(--grey);
+
+    padding: var(--sp2) var(--sp3);
+}
+
 
 /*home classes*/
 .homeTitle {
