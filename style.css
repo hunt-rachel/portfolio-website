@@ -739,6 +739,11 @@ nav a.active {
     .portfolioTag {
         display: none;
     }
+
+    .modalVideo {
+        width: 480px;
+        height: 270px;
+    }
     
     /*.modalWindow {
         height: 70vh;
@@ -757,11 +762,6 @@ nav a.active {
 
     .modalBody {
         flex-direction: column;
-    }
-
-    .modalVideo {
-        width: 560px;
-        height: 315px;
     }
 
     .modalUnderVideo {
