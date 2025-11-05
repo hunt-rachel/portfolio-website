@@ -10,7 +10,7 @@ class HomeVideo extends HTMLElement {
         const vidCaption = this.getAttribute("vidCaption");
 
         this.innerHTML = `<div class=homeVid>
-            <iframe width = "427px" height="240px" src="${vidLink}" controls>
+            <iframe width = "480px" height="270px" src="${vidLink}" controls>
                 your browser does not support this video!
             </iframe>
             <p class="centerTxt">${vidCaption}</p>
