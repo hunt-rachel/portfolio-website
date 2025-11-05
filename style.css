@@ -51,8 +51,8 @@
     --sp5: 75px;
 
     /*must be even for line positioning*/
-    --dotSize: 16px;
-    --dotSizeS: 8px;
+    --dotSize: 12px;
+    --dotSizeS: 6px;
 
     /*font sizes*/
     --smallP: 1rem;
@@ -62,7 +62,7 @@
     --smallHeader: 1.75rem;
     --midHeader: 2rem;
     --largeHeader: 2.25rem;
-    --xlHeader: 2.5rem;
+    --xlHeader: 3rem;
 }
 
 h1, h2 {
@@ -279,7 +279,7 @@ nav a.active {
 }
 
 .homeSubtitle {
-    font-size: var(--largeP);
+    font-size: var(--smallHeader);
     padding-bottom: var(--sp2);
 }
 
@@ -320,7 +320,7 @@ nav a.active {
     flex-wrap: wrap;
     justify-content: center;
 
-    font-size: var(--midP);
+    font-size: var(--largeP);
     margin: var(--sp2) 0;
 }
 
@@ -335,7 +335,7 @@ nav a.active {
 }
 
 .aboutFooter p {
-    font-size: var(--midP);
+    font-size: var(--largeP);
 }
 
 /*.personalStatement {
@@ -344,7 +344,7 @@ nav a.active {
 
 .personalStatement p{
     text-align: left;
-    font-size: var(--smallP);
+    font-size: var(--midP);
 }
 
 .updatesSection h2{
@@ -367,11 +367,11 @@ nav a.active {
 .uHeader {
     flex-wrap: wrap;
     font-style: italic;
-    font-size: var(--midP);
+    font-size: var(--largeP);
 }
 
 .uText p {
-    font-size: var(--smallP);
+    font-size: var(--midP);
 }
 
 .uText {
@@ -523,7 +523,7 @@ nav a.active {
     user-select: none;
     margin-right: var(--sp3);
 
-    font-weight: var(--smallHeader);
+    font-size: var(--xlHeader);
 }
 
 #modal:not(:target) {
@@ -670,7 +670,7 @@ nav a.active {
 }
 
 .line {
-    height: 4px;
+    height: 3px;
 
     border-radius: 50px;
     
@@ -738,6 +738,10 @@ nav a.active {
 
     .portfolioTag {
         display: none;
+    }
+    
+    .modalBody {
+        flex-direction: column;
     }
 
     .modalVideo {
