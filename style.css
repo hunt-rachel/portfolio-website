@@ -740,14 +740,33 @@ nav a.active {
         display: none;
     }
     
-    #modal {
-        transform: scale(50%);
+    .modalWindow {
+        height: 70vh;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: white rgba(0,0,0,0);
+    }
+    
+    .modalTitle {
+        font-size: var(--midP);
     }
 
-    /*.modalVideo {
+    .modalClose {
+        font-size: var(--midHeader);
+    }
+
+    .modalBody {
+        flex-direction: column;
+    }
+
+    .modalVideo {
+        width: 560px;
+        height: 315px;
+    }
+
+    .modalUnderVideo {
         width: 480px;
-        height: 270px;
-    }*/
+    }
 }
 
 
