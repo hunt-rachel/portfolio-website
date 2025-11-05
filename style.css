@@ -744,20 +744,31 @@ nav a.active {
         width: 480px;
         height: 270px;
     }
-    
-    /*.modalWindow {
-        height: 70vh;
-        overflow-y: scroll;
-        scrollbar-width: thin;
-        scrollbar-color: white rgba(0,0,0,0);
-    }
-    
+
     .modalTitle {
         font-size: var(--midP);
     }
 
     .modalClose {
         font-size: var(--midHeader);
+    }
+
+    .modalBodyRight p {
+    font-size: var(--smallP);
+    }
+
+    .cardTopInfo {
+    font-style: italic;
+    font-weight: 1000;
+
+    font-size: var(--smallP);
+    }
+    
+    /*.modalWindow {
+        height: 70vh;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: white rgba(0,0,0,0);
     }
 
     .modalBody {
