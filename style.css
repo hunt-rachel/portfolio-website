@@ -740,14 +740,14 @@ nav a.active {
         display: none;
     }
     
-    .modalBody {
-        flex-direction: column;
+    #modal {
+        transform: scale(50%);
     }
 
-    .modalVideo {
+    /*.modalVideo {
         width: 480px;
         height: 270px;
-    }
+    }*/
 }
 
 
