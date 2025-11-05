@@ -24,6 +24,7 @@ function displayModal(mID) {
         for(let j = 0; j < modalObj[mID].videos.length; j++) {
             let vid = document.createElement("iframe");
             vid.setAttribute("class", "modalVideo");
+            vid.setAttribute("allowfullscreen", "true");
             vid.controls="controls";
             vid.src=modalObj[mID].videos[j];
             mVideo.appendChild(vid);

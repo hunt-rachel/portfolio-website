@@ -10,7 +10,7 @@ class HomeVideo extends HTMLElement {
         const vidCaption = this.getAttribute("vidCaption");
 
         this.innerHTML = `<div class=homeVid>
-            <iframe width = "480px" height="270px" src="${vidLink}" controls>
+            <iframe width = "480px" height="270px" src="${vidLink}" allowfullscreen="true" controls>
                 your browser does not support this video!
             </iframe>
             <p class="centerTxt">${vidCaption}</p>
@@ -67,7 +67,7 @@ class UpdateSection extends HTMLElement {
             </div>
 
         </div>
-        <div class="gap45"></div>`;
+        <div class="gap25"></div>`;
     }
 }
 customElements.define("update-section", UpdateSection);

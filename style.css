@@ -51,8 +51,8 @@
     --sp5: 75px;
 
     /*must be even for line positioning*/
-    --dotSize: 8px;
-    --dotSizeS: 4px;
+    --dotSize: 16px;
+    --dotSizeS: 8px;
 
     /*font sizes*/
     --smallP: 1rem;
@@ -62,6 +62,7 @@
     --smallHeader: 1.75rem;
     --midHeader: 2rem;
     --largeHeader: 2.25rem;
+    --xlHeader: 2.5rem;
 }
 
 h1, h2 {
@@ -79,7 +80,7 @@ body {
     padding-bottom: 5vh;
     justify-content: center;
 
-    min-width: 600px;
+    min-width: 952px;
 }
 
 #homeBody {
@@ -175,7 +176,7 @@ body {
     font-family: var(--ff1);
     font-weight: 100;
 
-    font-size: var(--smallHeader);
+    font-size: var(--midHeader);
 
     display: inline-block;
     vertical-align: middle;
@@ -251,7 +252,7 @@ nav a.active {
 
     border-top: 2px solid var(--grey);
 
-    padding: var(--sp2) var(--sp3);
+    padding: var(--sp2) var(--sp4);
 }
 
 .workBody {
@@ -267,7 +268,7 @@ nav a.active {
 
     border-top: 2px solid var(--grey);
 
-    padding: var(--sp2) var(--sp3);
+    padding: var(--sp2) var(--sp4);
 }
 
 
@@ -278,7 +279,7 @@ nav a.active {
 }
 
 .homeSubtitle {
-    font-size: var(--midP);
+    font-size: var(--largeP);
     padding-bottom: var(--sp2);
 }
 
@@ -320,12 +321,13 @@ nav a.active {
     justify-content: center;
 
     font-size: var(--midP);
+    margin: var(--sp2) 0;
 }
 
 /*about classes*/
 .aboutTitle {
     margin-bottom: var(--sp1);
-    font-size: var(--largeHeader);
+    font-size: var(--xlHeader);
 }
 
 .aboutFooter {
@@ -396,6 +398,8 @@ nav a.active {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+
+    margin: var(--sp1) 0;
 }
 
 .pfTag span{
@@ -407,7 +411,7 @@ nav a.active {
 
     word-spacing: -2px;
 
-    font-size: var(--smallP);
+    font-size: var(--midP);
 }
 
 .pfImages {
@@ -504,7 +508,7 @@ nav a.active {
     align-items: center;
     margin: var(--sp1) var(--sp3);
 
-    font-size: var(--midHeader);
+    font-size: var(--smallHeader);
 }
 
 .modalTitle h2 {
@@ -518,6 +522,8 @@ nav a.active {
 
     user-select: none;
     margin-right: var(--sp3);
+
+    font-weight: var(--smallHeader);
 }
 
 #modal:not(:target) {
@@ -580,7 +586,7 @@ nav a.active {
 
     word-spacing: -2px;
 
-    font-size: var(--smallP);
+    font-size: var(--midP);
 }
 
 .modalBodyRight {
@@ -592,7 +598,7 @@ nav a.active {
 }
 
 .modalBodyRight p {
-    font-size: var(--smallP);
+    font-size: var(--midP);
 }
 
 .modalBodyRight a {
@@ -603,7 +609,7 @@ nav a.active {
     font-style: italic;
     font-weight: 1000;
 
-    font-size: var(--midP);
+    font-size: var(--largeP);
 }
 
 /*contact classes*/
@@ -612,11 +618,11 @@ nav a.active {
 }
 
 #contactBody h2 {
-    font-size: var(--largeHeader);
+    font-size: var(--xlHeader);
 }
 
 #contactBody p {
-    font-size: var(--largeP);
+    font-size: var(--midHeader);
 }
 
 /*text styles*/
@@ -664,7 +670,7 @@ nav a.active {
 }
 
 .line {
-    height: 2px;
+    height: 4px;
 
     border-radius: 50px;
     
@@ -719,7 +725,7 @@ nav a.active {
     }
 }
 
-@media (max-width: 933px) {
+@media (max-width: 1091px) {
     .pfImages{
         justify-content:center;
 
@@ -732,6 +738,11 @@ nav a.active {
 
     .portfolioTag {
         display: none;
+    }
+
+    .modalVideo {
+        width: 480px;
+        height: 270px;
     }
 }
 
