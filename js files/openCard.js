@@ -2,7 +2,6 @@
 function displayModal(mID) {
     //get all modal elements
     const mTitle= document.querySelector(".modalTitle");
-    //add smth for video when have functionality
     const mTags = document.querySelector(".modalTag");
     const mText = document.getElementById("modalText");
     const mVideo = document.querySelector(".modalVideo");
@@ -295,6 +294,27 @@ const modalObj = {
     },
 
     //software development section
+    rw: {
+        title: "Recipe Website",
+        videos: [
+            "https://youtube.com/embed/5mF0Rx00QU4"
+        ],
+        tags: [
+            "html",
+            "css",
+            "javascript"
+        ],
+        text: `<span class="cardTopInfo"> --- May 2026 --- <a href=https://rachelsrecipewebsite.netlify.app target="_blank">link to site</a></span><br><br>
+
+        A project to teach myself technical aspects of website design! <br> <br> 
+
+        This site holds my favourite recipes - both ones I have found online, and created myself. Within this site, users can search for a specific meal, or be surprised if they're not sure what they want!<br> <br> 
+        The site keeps track of the recipes users have added to their favourites, can filter recipe listings by tags, and also handles user searches (including autocomplete and typos). <br> <br> 
+
+
+        Developed in using HTML, CSS, and JavaScript.`,
+    },
+    
     cbg: {
         title: "Composition Brief Generator",
         videos: [

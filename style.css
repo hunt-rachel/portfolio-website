@@ -302,6 +302,14 @@ nav a.active {
     font-size: var(--midP);
 }
 
+.latestWork {
+    font-size: var(--largeP);
+}
+
+.latestWork a {
+    color: var(--greenD)
+}
+
 .quickLinks {
     padding-top: var(--sp3);
     padding-bottom: var(--sp1);
